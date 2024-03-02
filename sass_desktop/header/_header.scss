@@ -1,0 +1,52 @@
+header {
+  position: absolute;
+  width: 100%;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-list {
+  display: flex;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.header-link {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+  transition: color 300ms linear;
+  &:focus,
+  &:hover {
+    color: var(--color-for-hover);
+  }
+}
+
+.header-tel {
+  color: var(--main-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  transition: color 300ms linear;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+}
+.logo {
+  display: block;
+  padding: 32px 0;
+  margin-right: 130px;
+}
+.header-cont {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.header-btn {
+  margin-left: 40px;
+  background-color: inherit;
+}

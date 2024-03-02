@@ -1,0 +1,120 @@
+.burger-btn {
+  background-color: inherit;
+  //   border: none;
+  width: 40px;
+  height: 40px;
+}
+.burger-svg {
+  fill: #ffff;
+}
+
+.mobile-logo {
+  display: flex;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    display: none;
+  }
+}
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transition: left 300ms, visibility 300ms;
+  & .container {
+    height: 100%;
+  }
+  .is-hidden {
+    left: -100px;
+    right: auto;
+  }
+}
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mobile-list li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile-navigation-link {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(25 / 18);
+  letter-spacing: 1.8px;
+  transition: color 300ms linear;
+
+  &:hover {
+    color: #ff6c00;
+  }
+}
+
+.mobile-contact {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.mobile-tel {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(25 / 18);
+  letter-spacing: 1.8px;
+  transition: color 300ms linear;
+
+  &:hover {
+    color: #ff6c00;
+  }
+}
+
+.mobile-cos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 100px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+
+    left: 0px;
+    top: 9px;
+  }
+}
+
+.social-burger-links {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.8px;
+}
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 48px 0;
+
+  margin-left: 28px;
+}
+
+.mobile-btn {
+  color: #303030;
+  background: #fff;
+  box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.16),
+    -2px 0px 4px 0px rgba(0, 0, 0, 0.08), -4px 0px 8px 0px rgba(0, 0, 0, 0.04);
+}

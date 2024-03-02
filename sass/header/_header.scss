@@ -1,0 +1,96 @@
+header {
+  position: absolute;
+  width: 100%;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    & .container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.header-list {
+  display: flex;
+  & > li:not(:last-child) {
+    @include tablet {
+      margin-right: 16px;
+    }
+    @include desktop {
+      margin-right: 30px;
+    }
+  }
+}
+
+.header-link {
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+  transition: color 300ms linear;
+
+  &:focus,
+  &:hover {
+    color: var(--color-for-hover);
+  }
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.header-tel {
+  color: var(--main-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  transition: color 300ms linear;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+  @include tablet {
+    margin-left: 40px;
+  }
+  @include desktop {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+}
+.logo {
+  display: block;
+  padding: 32px 0;
+  margin-right: 60px;
+  @include desktop {
+    margin-right: 130px;
+  }
+}
+.header-cont {
+  margin-left: auto;
+ 
+  width: 200px;
+  margin-top: 40px;
+  @include desktop {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 0px
+  }
+}
+.cont-wraper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 20px;
+  @include desktop {
+    display: block;
+  }
+}
+
+.header-btn {
+
+  background-color: inherit;
+  @include desktop {
+      margin-left: 40px;
+  }
+}

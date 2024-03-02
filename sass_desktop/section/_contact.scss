@@ -1,0 +1,108 @@
+.contact-wrap {
+  display: flex;
+  background-color: #191c26;
+  background-image: url(./img/Bg.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center right calc(50% - 15px - 392px);
+  & .container {
+    display: flex;
+  }
+}
+
+/* section  form */
+.form {
+  width: calc(50% + 15px);
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.form-title {
+  color: #fff;
+}
+.send-contact-btn {
+  color: #ffff;
+  background-color: inherit;
+  padding: 12px 38px;
+}
+.footter-item-input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 1.1px;
+  margin-bottom: 44px;
+  cursor: pointer;
+  transition: border-botton-color 500ms linear;
+  &::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+    text-transform: uppercase;
+    transition: color 500ms linear;
+  }
+  &:focus,
+  &:hover {
+    outline: transparent;
+    border-bottom-color: #ffffff;
+  }
+}
+
+.contact-footer-input {
+  width: 270px;
+  height: 24px;
+  &:first-child {
+    margin-right: 30px;
+  }
+}
+
+.footter-item-input:hover::placeholder,
+.footter-item-input:focus::placeholder {
+  color: #fff;
+}
+.contact-message-area {
+  width: 570px;
+  height: 76px;
+  resize: none;
+}
+/* section contacts */
+.contacts {
+  width: calc(50% - 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
+  margin-left: 100px;
+}
+.contacts-list {
+  padding-left: 0;
+  margin-bottom: 72px;
+}
+.contacts-title {
+  color: #fff;
+}
+.contacts-items:not(:last-child) {
+  margin-bottom: var(--main-margin);
+}
+.contact-links {
+  color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  letter-spacing: 0.36px;
+}
+
+.contact-address {
+  font-weight: 700;
+}
+.contacts-pre-title {
+  color: #fff;
+  margin-bottom: var(--main-margin);
+}
+
+.contacts-text {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  letter-spacing: 0.36px;
+}

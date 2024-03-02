@@ -1,0 +1,25 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+ul,
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}

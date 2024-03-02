@@ -1,0 +1,32 @@
+.gallery {
+  padding: 84px 0;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 120px 0;
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.gallery-item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: inherit;
+  }
+}
+.gallery-pre-title {
+  color: #303030;
+  margin-bottom: 71px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+  }
+}

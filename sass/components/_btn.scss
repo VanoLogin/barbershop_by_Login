@@ -1,0 +1,18 @@
+.btn {
+  color: var(--main-color);
+  font-family: inherit;
+  font-size: 12px;
+
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.08px;
+  border-radius: 25px;
+  border: 1px solid var(--color-for-hover);
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: background-color 300ms linear;
+  &:hover,
+  &:focus {
+    background-color: var(--color-for-hover);
+  }
+}

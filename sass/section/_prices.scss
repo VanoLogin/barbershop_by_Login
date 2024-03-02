@@ -1,0 +1,112 @@
+.prices {
+  padding-top: 84px;
+  background-image: url(../img/background/prices_phone.png);
+  background-color: #111319;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+
+  @include tablet {
+    background-image: url(../img/background/prices_tablet.png);
+  }
+  @include desktop {
+    background-image: url(../img/background/prices_img.png);
+  }
+}
+
+.prices-list-wrap {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--main-margin);
+}
+
+.prices-title {
+  color: #fff;
+
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  display: none;
+  padding: 30px 20px;
+  flex-grow: 1;
+  &:nth-child(2){
+    background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
+  &:last-child {
+    background-image: linear-gradient(
+      180deg,
+      #090b13 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  }
+  @include desktop {
+    display: block; 
+  }
+}
+.prices-flex {
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 30px 20px 30px 40px;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  @include desktop {
+    display: none;
+  }
+}
+
+.prices-items {
+  margin-bottom: var(--main-margin);
+  display: flex;
+  justify-content: space-between;
+  color: #9da4bd;
+  align-items: baseline;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  &::after {
+    content: "";
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin: 0 12px;
+  }
+}
+
+.prices-elements {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4; /* 142.857% */
+  letter-spacing: 0.28px;
+  &:last-child {
+    order: 1;
+  }
+  @include tablet {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6; /* 166.667% */
+    letter-spacing: 0.36px;
+  }
+}
+.prices-btn {
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  background-color: inherit;
+  display: block;
+  margin: 0 auto;
+  margin-top: 44px;
+}
